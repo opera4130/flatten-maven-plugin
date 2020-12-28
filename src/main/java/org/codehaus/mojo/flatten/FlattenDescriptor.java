@@ -533,4 +533,20 @@ public class FlattenDescriptor
         return true;
     }
 
+
+    /**
+     * @return {@link ElementHandling} for {@link Model#getLicenses()} () LICENSES}.
+     */
+    public ElementHandling getLicenses()
+    {
+        return getHandling( PomProperty.LICENSES );
+    }
+
+    /**
+     * @param licenses the {@link #getLicenses() LICENSES} to set.
+     */
+    public void setLicenses( ElementHandling licenses )
+    {
+        setHandling( PomProperty.LICENSES, licenses );
+    }
 }
